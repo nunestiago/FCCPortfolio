@@ -1,0 +1,46 @@
+:root {
+  --main-gray: #1a535c;
+  --main-blue: #4ecdc4;
+  --main-white: #f7fff7;
+  --main-red: #ff6b6b;
+  --main-yellow: #ffe66d;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 5% 1f 5%;
+  grid-template-rows: 0.3fr repeat(3, 1fr) 0.2fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    '. navbar .'
+    '. about .'
+    '. work .'
+    '. contact .'
+    '. footer' .;
+}
+
+body {
+  background-color: #1a535c;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  grid-area: navbar;
+  display: flex;
+  position: fixed;
+  background-color: #ff6b6b;
+}
+
+.navbar ul {
+  display: flex;
+  min-height: 1v;
+}
+
+li {
+  list-style-type: none;
+}

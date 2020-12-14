@@ -1,0 +1,52 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 10% 1f 10%;
+  grid-template-rows: 0.5fr repeat(3, 1fr) 0.5fr;
+  gap: 0px 0px;
+}
+
+body {
+  background-color: #1a535c;
+  font-family: 'Roboto', sans-serif;
+  color: #f7fff7;
+}
+
+.navbar {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  background-color: #ff6b6b;
+  top: 0;
+  height: 6vh;
+  position: sticky;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar ul {
+  display: flex;
+  margin-right: 1vh;
+}
+
+.navbar li {
+  list-style: none;
+  margin-right: 1vh;
+  font-size: 2rem;
+  padding: 1.3rem 2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #f7fff7;
+}
+/*# sourceMappingURL=style.css.map */
